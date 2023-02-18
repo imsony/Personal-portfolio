@@ -7,6 +7,7 @@
 6 - WHAT DO I DO - TECHNO
 7 - WHAT DO I DO - SKILLS
 8 - WHAT DO I DO - SOFT SKILLS
+9 - PORTFOLIO 
 
 6 - SKILLS
 ---------------------------------------------- */
@@ -88,6 +89,14 @@ a {
     color: black;
 }
 
+@media only screen and (max-width: 750px) {
+    .nav li {
+        display:none;
+    }
+    .logo {
+        width: 30%;
+    }
+}
 
 
 /* 4 - BANNER */
@@ -103,6 +112,13 @@ a {
     align-items: center;
     width:100%;
     padding: 400px 0px;
+}
+
+@media only screen and (max-width: 500px) {
+    .banner h1 {
+        width: 80%;
+        text-align: center;
+    }
 }
 
 /* 5 - PRESENTATION */
@@ -125,6 +141,22 @@ a {
     max-width: 500px;
     width: 30%;
     min-width: 200px;
+}
+
+.presentation p {
+    text-align: justify;
+}
+
+@media only screen and (max-width:700px) {
+    .introduction {
+        flex-wrap: wrap;
+    }
+
+    .presentation {
+        width: 90%;
+        margin-top: 3rem;
+        text-align: center;
+    }
 }
 
 /* 6 - WHAT I DO - TECHNO */
@@ -169,6 +201,12 @@ a {
     vertical-align: middle;
 }
 
+@media only screen and (max-width: 600px) {
+    .technologies {
+        width: 95%;
+    }
+}
+
 /* 7 - WHAT I DO - SKILLS */
 
 .skills-box {
@@ -176,22 +214,31 @@ a {
     margin-top: 3rem;
     justify-content: space-evenly;
     background-color: #f2f2f2;
-    padding: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     flex-wrap: wrap;
 }
 
 .skill {
     display: flexbox;
     width: 25%;
-    justify-content: center;
+    justify-content: space-evenly;
     margin: 3rem auto;
-    min-width: 300px;
+    min-width: 250px;
+    flex-wrap: wrap;
+    margin: 2rem;
 }
 
 .skill p {
     margin-top: 2rem;
     text-align: justify;
     justify-content: center;
+}
+
+@media only screen and (max-width:500px) {
+    .skill {
+        width: 80%
+    }
 }
 
 /* 8 - WHAT I DO - SOFT SKILLS */
@@ -237,6 +284,42 @@ a {
     vertical-align: middle;
     margin: auto 0;
 }
+
+@media only screen and (max-width: 600px) {
+    .softskills {
+        width: 95%;
+    }
+}
+
+/* 9 - PORTFOLIO */
+/*
+.portfolio {
+    display: flexbox;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.work {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.work-text {
+    width: 30%;
+    align-items: center;
+}
+
+.work-text p {
+    margin-top: 2rem;
+}
+
+.portfolio img {
+    width: 50%;
+} 
+*/
 
 /* 6 - SKILLS */ 
 /*
