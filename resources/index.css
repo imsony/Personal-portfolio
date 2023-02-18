@@ -4,7 +4,10 @@
 3 - NAVIGATION - LINKS & BUTTONS
 4 - BANNER
 5 - PRESENTATION
-6 - WHAT DO I DO
+6 - WHAT DO I DO - TECHNO
+7 - WHAT DO I DO - SKILLS
+8 - WHAT DO I DO - SOFT SKILLS
+
 6 - SKILLS
 ---------------------------------------------- */
 
@@ -27,11 +30,20 @@ html {
 h1 {
     font-family: Roboto, sans-serif;
     font-weight: 700;
+    font-size: 2rem;
 }
 
 h2 {
     font-family: Roboto, sans-serif;
     font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-family: Lora, serif;
+    font-size: 1.2rem;
 }
 
 p {
@@ -115,8 +127,119 @@ a {
     min-width: 200px;
 }
 
-/* 6 - SKILLS */ 
+/* 6 - WHAT I DO - TECHNO */
 
+.whatido {
+    display: flexbox;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 7rem;
+}
+
+.techno-box {
+    display: flexbox;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.technologies {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: stretch;
+    padding: 2rem;
+    width: 60%;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.technologies > * {
+    flex: 1;
+}
+
+.techno {
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    background-color: #FFDF5F;
+}
+
+.techno p {
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+/* 7 - WHAT I DO - SKILLS */
+
+.skills-box {
+    display: flex;
+    margin-top: 3rem;
+    justify-content: space-evenly;
+    background-color: #f2f2f2;
+    padding: 10rem;
+    flex-wrap: wrap;
+}
+
+.skill {
+    display: flexbox;
+    width: 25%;
+    justify-content: center;
+    margin: 3rem auto;
+    min-width: 300px;
+}
+
+.skill p {
+    margin-top: 2rem;
+    text-align: justify;
+    justify-content: center;
+}
+
+/* 8 - WHAT I DO - SOFT SKILLS */
+
+.softskills-box {
+    display: flexbox;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+    margin-top: 5rem;
+    justify-content: center;
+}
+
+.softskills {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: stretch;
+    padding: 2rem;
+    width: 60%;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.softskills > * {
+    flex: 1;
+}
+
+        /* TO CHECK : HOW TO STRETCH ITEMS MORE THAN OTHERS */
+.double > * {
+    flex: 2;
+}
+
+.soft {
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    background-color: #FFDF5F;
+    vertical-align: middle;
+}
+
+.soft p {
+    font-weight: 600;
+    vertical-align: middle;
+    margin: auto 0;
+}
+
+/* 6 - SKILLS */ 
+/*
 .skills {
     display: flex;
     flex-wrap: wrap;
@@ -138,4 +261,4 @@ a {
     border: 4px solid black;
     border-radius: 50%;
     margin: 1 rem;
-}
+}*/
